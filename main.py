@@ -4,9 +4,13 @@ app= FastAPI()
 
 #db_connection=dbh.get_connection()
 
-@app.post("/home")
+@app.get("/home")
 def home():
     return "Home hai bhai"
+
+@app.get("/room")
+def room():
+    return "room hai bhai"
 
 # @app.post("/students/")
 # def create_student(roll_number:int,name: str, age: int):
