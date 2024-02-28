@@ -6,7 +6,7 @@ app= FastAPI()
 
 @app.get("/")
 def home(): 
-    return "Home hai bhai"
+    return "Home hai bhai-Welcome to home"
 
 @app.get("/room")
 def room():
